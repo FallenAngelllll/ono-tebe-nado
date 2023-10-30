@@ -1,5 +1,5 @@
 .header {
-    padding: 92px 49px 92px 51px;
+    padding: 92px 50px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     justify-content: space-between;
@@ -34,7 +34,6 @@
 
 .header__link {
     text-underline-position: under;
-    letter-spacing: 0.4px;
 }
 
 .header__logo-image {
@@ -46,12 +45,12 @@
     font-style: normal;
     text-underline-position: under;
     line-height: 135%;
-    letter-spacing: 0.1px;
+    width: 55%;
 }
 
 .header__adress {
     justify-self: end;
-    padding-right: 6px;
+    width: 40%;
 }
 
 .cover {
@@ -59,15 +58,24 @@
     background-size: cover;
     background-position: center;
     color: white;
+    position: relative;
 }
 
 .cover-contain {
     padding: 165px 50px 50px;
+    position: relative;
+    z-index: 2;
 }
 
 .overlay {
     height: inherit;
     background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .cover-title {
@@ -80,11 +88,11 @@
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
-    letter-spacing: 31px;
+    letter-spacing: 30px;
 }
 
 .letter-spacing-expanded {
-    letter-spacing: 58px;
+    letter-spacing: 60px;
 }
 
 .aligned-text-left {
@@ -93,7 +101,7 @@
 }
 
 .aligned-text-center {
-    max-width: 1328px;
+    margin-right: 30px;
     text-align: center;
     line-height: 100%;
 }
@@ -119,11 +127,12 @@
     font-weight: 400;
     line-height: 28px;
     text-transform: uppercase;
-    word-spacing: 17px;
-    margin-right: 78px;
+    word-spacing: 17.5px;
+    margin-right: 6%;
 }
 
 .bet-button {
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: normal;
@@ -131,7 +140,7 @@
     text-align: center;
     background-color: transparent;
     color: white;
-    border: 1px solid white;
+    border: 1px solid currentColor;
     padding: 12px 32px;
 }
 
@@ -141,7 +150,7 @@
 
 .lots_heading {
     margin-left: 40px;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -170,31 +179,25 @@
 
 .card {
     height: inherit;
-}
-
-.card .overlay {
+    background-size: cover;
+    background-position: center;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card_title {
@@ -202,6 +205,8 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: underline;
+    position: relative;
+    z-index: 2;
 }
 
 .card_text {
@@ -209,11 +214,13 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
+    position: relative;
+    z-index: 2;
 }
 
 .lots_look-more-link {
     margin-left: 40px;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
@@ -256,9 +263,7 @@
     line-height: normal;
     text-transform: uppercase;
     align-self: center;
-    padding-left: 25px;
-    padding-top: 10px;
-    letter-spacing: 0px;
+    padding-left: 24px;
 }
 
 .about_text {
@@ -268,17 +273,15 @@
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
-    padding-left: 25px;
-    padding-top: 9px;
+    padding-left: 24px;
+    padding-top: 3.3px;
     display: flex;
     flex-direction: column;
-    gap: 27px;
-    word-spacing: 1px;
-    letter-spacing: 0.3px;
+    gap: 25px;
 }
 
 .footer {
-    padding: 3px 50px 90px 50px;
+    padding: 0px 50px 90px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
